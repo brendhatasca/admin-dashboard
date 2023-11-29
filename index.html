@@ -8,115 +8,129 @@
 </head>
 <body>
     
-    <div class="sidebar">
-        <div class="logo">Dashboard</div>
-        <div class="main-menu">
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
+    <div class="hero">
+        <div class="sidebar">
+            <div class="logo">Dashboard</div>
+            <div class="main-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </div>
+            <div class="more-menu">
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
         </div>
-        <div class="more-menu">
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+        <div class="header">
+            <div class="header-top">
+                <div class="search-bar">
+                    <input type="text" id="search-bar" onkeyup="searchPage()" placeholder="Browse" >
+                </div>
+                <div class="profile-and-notifications">
+                    <div class="notification-icon"></div>
+                    <div class="profile-icon"></div>
+                    <div class="profile-name">Brendha Tasca</div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="welcome">
+                    <div class="welcome-profile-icon"></div>
+                    <div class="greeting">
+                        <p>Hi there,</p>
+                        <p class="username">Brendha Tasca (@tascabrendha)</p>
+                    </div>
+                </div>
+                <ul class="action-bar">
+                    <li class="new-project">New</li>
+                    <li class="upload-project">Upload</li>
+                    <li class="share-project">Share</li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <div class="main-content">
+            <div class="user-projects">
+                <div class="user-projects-head content-title">Your Projects</div>
 
-    <div class="header">
-        <div class="search-bar">
-            <input type="text" id="search-bar" onkeyup="searchPage()" placeholder="Browse" >
-        </div>
-        <div class="profile-and-notifications">
-            <div class="notification-icon"></div>
-            <div class="profile-icon"></div>
-            <div class="profile-name"></div>
-        </div>
-        <div class="welcome-name">
-            <div class="welcome-profile-icon"></div>
-            <div class="greeting">Hi there,</div>
-            <div class="username">Brendha Tasca (@tascabrendha)</div>
-        </div>
-        <div class="action-bar">
-            <div class="new-project">New</div>
-            <div class="upload-project">Upload</div>
-            <div class="share-project">Share</div>
-        </div>
-    </div>
+                <div class="user-projects-cards-container">
+                    <div class="project-card">
+                        <p class="title">Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis leo sed metus facilisis sagittis quis a sapien. Nam quis semper sapien. Praesent quis justo dictum, faucibus risus in, vehicula massa. Sed congue euismod lorem id facilisis.</p>
+                    </div>
+                    <div class="project-card">
+                        <p class="title">Less Cool Project</p>
+                        <p>Cras leo ex, ultricies eget risus sit amet, blandit blandit eros. Fusce vitae semper turpis. Mauris vestibulum sit amet mi nec euismod.</p>
+                    </div>
+                    <div class="project-card">
+                        <p class="title">Impossible App</p>
+                        <p>Duis efficitur tellus sed felis sagittis pharetra. Quisque sit amet rhoncus lacus, nec posuere nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
+                    <div class="project-card">
+                        <p class="title">Easy Peasy App</p>
+                        <p>Morbi convallis vel erat quis pellentesque. Morbi imperdiet ante a augue fermentum accumsan. Aenean viverra ex erat, nec eleifend dui finibus nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    </div>
+                    <div class="project-card">
+                        <p class="title">Ad Blocker</p>
+                        <p>Nunc a justo quis ligula pretium elementum. Mauris porttitor vulputate purus rhoncus blandit. Integer dictum erat eu justo gravida iaculis. Mauris at arcu vitae neque luctus fermentum sed nec massa.</p>
+                    </div>
+                    <div class="project-card">
+                        <p class="title">Money Maker</p>
+                        <p>Sed id fringilla augue. Nam sit amet aliquet justo. Duis odio nisi, interdum non suscipit vel, finibus a justo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <div class="announcements-title content-title">Announcements</div>
 
-    <div class="main-content">
-        <div class="user-projects-head content-title">Your Projects</div>
-        <div class="user-projects-container">
-            <div class="project-card">
-                <p class="title">Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis leo sed metus facilisis sagittis quis a sapien. Nam quis semper sapien. Praesent quis justo dictum, faucibus risus in, vehicula massa. Sed congue euismod lorem id facilisis.</p>
+                <div class="announcements-container">
+                    <div class="announcements-section">
+                        <p class="title">Site Maintenance</p>
+                        <p>add text</p>
+                    </div>
+                    <div class="announcements-section">
+                        <p class="title">Community Share Day</p>
+                        <p>add text</p>
+                    </div>
+                    <div class="announcements-section">
+                        <p class="title">Updated Privacy Policy</p>
+                        <p>add text</p>
+                    </div>
+                </div>
             </div>
-            <div class="project-card">
-                <p class="title">Less Cool Project</p>
-                <p>Cras leo ex, ultricies eget risus sit amet, blandit blandit eros. Fusce vitae semper turpis. Mauris vestibulum sit amet mi nec euismod.</p>
+            <div class="trending">
+                <div class="trending-title content-title">Trending</div>
+                <div class="trending-container">
+                    <ul>
+                        <li class="trending-profile">
+                            <div class="icon"></div>
+                            <p class="trending-username">@tegan</p>
+                            <p class="trending-name">World Peace Builder</p>
+                        </li>
+                        <li class="trending-profile">
+                                <div class="icon"></div>
+                                <p class="trendingusername">@morgan</p>
+                                <p class="trending-name">Super Cool Project</p>
+                            </li>
+                        <li class="trending-profile">
+                                <div class="icon"></div>
+                                <p class="trendingusername">@kendall</p>
+                                <p class="trending-name">Life Changing App</p>
+                            </li>
+                        <li class="trending-profile">
+                                <div class="icon"></div>
+                                <p class="trendingusername">@alex</p>
+                                <p class="trending-name">No Traffic Maker</p>
+                            </li>
+                    </ul>
+                </div>
             </div>
-            <div class="project-card">
-                <p class="title">Impossible App</p>
-                <p>Duis efficitur tellus sed felis sagittis pharetra. Quisque sit amet rhoncus lacus, nec posuere nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            </div>
-            <div class="project-card">
-                <p class="title">Easy Peasy App</p>
-                <p>Morbi convallis vel erat quis pellentesque. Morbi imperdiet ante a augue fermentum accumsan. Aenean viverra ex erat, nec eleifend dui finibus nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-            </div>
-            <div class="project-card">
-                <p class="title">Ad Blocker</p>
-                <p>Nunc a justo quis ligula pretium elementum. Mauris porttitor vulputate purus rhoncus blandit. Integer dictum erat eu justo gravida iaculis. Mauris at arcu vitae neque luctus fermentum sed nec massa.</p>
-            </div>
-            <div class="project-card">
-                <p class="title">Money Maker</p>
-                <p>Sed id fringilla augue. Nam sit amet aliquet justo. Duis odio nisi, interdum non suscipit vel, finibus a justo.</p>
-            </div>
-        </div>
-        <div class="announcements-title content-title">Announcements</div>
-        <div class="announcements-container">
-            <div class="announcements-section">
-                <p class="title">Site Maintenance</p>
-                <p>add text</p>
-            </div>
-            <div class="announcements-section">
-                <p class="title">Community Share Day</p>
-                <p>add text</p>
-            </div>
-            <div class="announcements-section">
-                <p class="title">Updated Privacy Policy</p>
-                <p>add text</p>
-            </div>
-        </div>
-        <div class="trending-title content-title"></div>
-        <div class="trending-container">
-            <ul>
-                <li class="trending-profile">
-                    <img src="" alt="">
-                    <p class="trending-username">@tegan</p>
-                    <p class="trending-name">World Peace Builder</p>
-                </li>
-                <li class="trending-profile">
-                        <img src="" alt="">
-                        <p class="trendingusername">@morgan</p>
-                        <p class="trending-name">Super Cool Project</p>
-                    </li>
-                <li class="trending-profile">
-                        <img src="" alt="">
-                        <p class="trendingusername">@kendall</p>
-                        <p class="trending-name">Life Changing App</p>
-                    </li>
-                <li class="trending-profile">
-                        <img src="" alt="">
-                        <p class="trendingusername">@alex</p>
-                        <p class="trending-name">No Traffic Maker</p>
-                    </li>
-            </ul>
         </div>
     </div>
 </body>
