@@ -8,6 +8,7 @@
     --sunset-orange: #FF6C22;
     --fruit-orange: #FF9209;
     --beige: #FFD099;
+    font-size: calc(0.625rem + 0.4vw)
 }
 
 body {
@@ -17,26 +18,58 @@ body {
 .hero {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 4fr;
+}
+
+.username, 
+.profile-name {
+    font-weight: 600;
 }
 
 .sidebar {
     color: #fff;
     background-color: var(--navy-blue);
     grid-row: 1 / -1;
+    padding-left: 1.5rem;
 
     display: grid;
+    grid-template-rows: auto 2fr 1fr;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.3rem;
+
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.logo h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+svg {
+    fill: #fff;
+    width: 1.9rem;  
+}
+
+.main-links ul {
+    display: grid;
+    gap: 1rem;
+}
+
+.secondary-links ul {
+    display: grid;
+    gap: 1rem;
 }
 
 .header{
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     background-color: #ffffff;
-}
 
-.header-top .profile-and-notifications {
-    display: flex;
-    align-items: center;
-    gap: 1em;
 }
 
 .header-top {
@@ -45,29 +78,70 @@ body {
     margin-bottom: 20px;
 }
 
+.profile-and-notifications {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-bar {
+    display: inline-flex;
+    width: 100%;
+    flex: 1 1 300px; /*(1) will take up all available space (1) will be able to shrink (300px) min width*/
+    margin-right: 200px;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"] {
+    width: 100%;
+    border: none;
+    background-color: var(--beige);
+    border-radius: 18px;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
 .header-bottom {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
 }
 
 .welcome {
     display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.username {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.user-id {
+    font-weight: 400;
 }
 
 .action-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: end;
+    gap: 2rem;
 }
 
 .action-bar li {
     color: #fff;
+    /* font-family: 'Open sans', sans-serif; */
     background-color: var(--navy-blue);
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 10px;
     width: 70px;
-    height: 30px;
-    text-align: center;
+    height: 20px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center; 
 }
 
 /*remove this after img added*/
@@ -83,7 +157,7 @@ body {
     padding: 15px;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 25px;
 }
 
@@ -93,34 +167,68 @@ body {
 
 .user-projects-cards-container {
     display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-auto-rows: 1fr;
 }
 
 .project-card {
     background-color: #fff;
-    height: 175px;
+    height: 120px;
+    padding: 30px 20px 30px 20px;
+}
+
+.project-card .title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
 }
 
 .announcements-container {
     background-color: #fff;
+    padding: 25px;
+
+    display: grid;
+    gap: 1rem;
 }
 
 .trending {
     grid-column: 2 / 3;
 }
 
-.trending-container {
+.trending-container{
     background-color: #fff;
-
-    display: grid;
+    padding: 1rem;
 }
+
+.trending-profile-list {
+    display: grid;
+    gap: 20px;
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-profile .icon {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.project-card,
+.announcements-container,
+.trending-container {
+    border-radius: 15px;
+}
+
 
 .trending-profile .icon, 
 .profile-and-notifications .profile-icon,
 .profile-and-notifications .notification-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: var(--fruit-orange);
     border-radius: 50%;
 }

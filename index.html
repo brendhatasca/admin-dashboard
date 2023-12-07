@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7a94e3df5c.js" crossorigin="anonymous"></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
     
     <div class="hero">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
-            <div class="main-menu">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg> 
+                <h2>Dashboard</h2>
+            </div>
+            <div class="main-links">
                 <ul>
                     <li>Home</li>
                     <li>Profile</li>
@@ -21,7 +25,7 @@
                     <li>Communities</li>
                 </ul>
             </div>
-            <div class="more-menu">
+            <div class="secondary-links">
                 <ul>
                     <li>Settings</li>
                     <li>Support</li>
@@ -32,7 +36,8 @@
         <div class="header">
             <div class="header-top">
                 <div class="search-bar">
-                    <input type="text" id="search-bar" onkeyup="searchPage()" placeholder="Browse" >
+                    <i class="fa-solid fa-magnifying-glass" style="color: #2b3499;"></i>
+                    <input type="search" id="search-bar" onkeyup="searchPage()" placeholder="Browse" >
                 </div>
                 <div class="profile-and-notifications">
                     <div class="notification-icon"></div>
@@ -45,7 +50,7 @@
                     <div class="welcome-profile-icon"></div>
                     <div class="greeting">
                         <p>Hi there,</p>
-                        <p class="username">Brendha Tasca (@tascabrendha)</p>
+                        <p class="username">Brendha Tasca <span class="user-id">(@tascabrendha)</span></p>
                     </div>
                 </div>
                 <ul class="action-bar">
@@ -62,7 +67,7 @@
                 <div class="user-projects-cards-container">
                     <div class="project-card">
                         <p class="title">Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis leo sed metus facilisis sagittis quis a sapien. Nam quis semper sapien. Praesent quis justo dictum, faucibus risus in, vehicula massa. Sed congue euismod lorem id facilisis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis leo sed metus facilisis sagittis quis a sapien. Nam quis semper sapien.</p>
                     </div>
                     <div class="project-card">
                         <p class="title">Less Cool Project</p>
@@ -74,7 +79,7 @@
                     </div>
                     <div class="project-card">
                         <p class="title">Easy Peasy App</p>
-                        <p>Morbi convallis vel erat quis pellentesque. Morbi imperdiet ante a augue fermentum accumsan. Aenean viverra ex erat, nec eleifend dui finibus nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                        <p>Morbi convallis vel erat quis pellentesque. Morbi imperdiet ante a augue fermentum accumsan. Aenean viverra ex erat, nec eleifend dui finibus nec.</p>
                     </div>
                     <div class="project-card">
                         <p class="title">Ad Blocker</p>
@@ -107,26 +112,34 @@
             <div class="trending">
                 <div class="trending-title content-title">Trending</div>
                 <div class="trending-container">
-                    <ul>
+                    <ul class="trending-profile-list">
                         <li class="trending-profile">
                             <div class="icon"></div>
-                            <p class="trending-username">@tegan</p>
-                            <p class="trending-name">World Peace Builder</p>
+                            <div class="trending-info">
+                                <p class="trending-username">@tegan</p>
+                                <p class="trending-name">World Peace Builder</p>
+                            </div>
                         </li>
                         <li class="trending-profile">
                                 <div class="icon"></div>
-                                <p class="trendingusername">@morgan</p>
-                                <p class="trending-name">Super Cool Project</p>
+                                <div class="trending-info">
+                                    <p class="trending-username">@morgan</p>
+                                    <p class="trending-name">Super Cool Project</p>
+                                </div>
                             </li>
                         <li class="trending-profile">
                                 <div class="icon"></div>
-                                <p class="trendingusername">@kendall</p>
-                                <p class="trending-name">Life Changing App</p>
+                                <div class="trending-info">
+                                    <p class="trending-username">@kendall</p>
+                                    <p class="trending-name">Life Changing App</p>
+                                </div>
                             </li>
                         <li class="trending-profile">
                                 <div class="icon"></div>
-                                <p class="trendingusername">@alex</p>
-                                <p class="trending-name">No Traffic Maker</p>
+                                <div class="trending-info">
+                                    <p class="trending-username">@alex</p>
+                                    <p class="trending-name">No Traffic Maker</p>
+                                </div>
                             </li>
                     </ul>
                 </div>
